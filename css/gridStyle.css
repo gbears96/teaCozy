@@ -1,0 +1,31 @@
+.grid {
+    display: grid;
+    border: 2px solid blue;
+    width: 500px;
+    height: 500px;
+    grid-template: repeat(4, 1fr 2fr) / repeat(4, 3fr 2fr);
+    gap: 5px;
+}
+
+.box {
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
+    border: 2px dodgerblue solid;
+}
+
+.a {
+    grid-row-start:1;
+    grid-row-end: 3;
+    grid-column-start:2;
+    grid-column-end:4;
+}
+.b {
+    /* grid-row-start:3;*/
+    /* grid-row-end: 4;*/
+    grid-row: 3 / span 2;
+}
+
+.c {
+    grid-area: 4 / 3 / span 3 / span 3;
+}
